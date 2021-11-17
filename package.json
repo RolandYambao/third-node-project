@@ -1,0 +1,25 @@
+{
+  "name": "third-node-project",
+  "version": "1.0.0",
+  "description": "This is my third node project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RolandYambao/third-node-project.git"
+  },
+  "keywords": [],
+  "author": "Roland Yambao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RolandYambao/third-node-project/issues"
+  },
+  "homepage": "https://github.com/RolandYambao/third-node-project#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "faker": "^5.5.3"
+  }
+}
