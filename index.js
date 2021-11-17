@@ -29,3 +29,13 @@ const randomLocality = {
     country: faker.address.country(),
 }
 console.log(randomLocality);
+
+const axios = require("axios");
+
+axios.get('https://api.github.com/users/RolandYambao')
+    .then(function (response) {
+        console.log(response.data);
+    })
+    .catch(function (err) {
+        console.log(err);
+    });
