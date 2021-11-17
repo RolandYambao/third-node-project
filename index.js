@@ -15,10 +15,17 @@ fs.readFile('story.txt', 'utf8', function (err, data) {
 
 const http = require('http');
 
-http.createServer((req, res) => {
-    res.write('No, World!');
-    res.end();
-})
-    .listen(8000);
+// http.createServer((req, res) => {
+//     res.write('No, World!');
+//     res.end();
+// })
+//     .listen(8000);
 
-    
+const faker = require("faker");
+const { random } = require("faker");
+const randomLocality = {
+    county: faker.address.county(),
+    state: faker.address.state(),
+    country: faker.address.country(),
+}
+console.log(randomLocality);
